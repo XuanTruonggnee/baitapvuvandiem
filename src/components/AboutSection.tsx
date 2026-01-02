@@ -58,14 +58,14 @@ export function AboutSection() {
 
                   {/* Basic Info */}
                   <div className="text-center sm:text-left">
-                    <h3 className="text-2xl font-bold mb-2">Nguyễn Văn A</h3>
+                    <h3 className="text-2xl font-bold mb-2">Vũ Văn Điềm</h3>
                     <div className="flex items-center gap-2 justify-center sm:justify-start text-muted-foreground mb-3">
                       <GraduationCap className="w-4 h-4 text-primary" />
-                      <span>Sinh viên năm 1</span>
+                      <span>Sinh viên Đại học Kinh tế - ĐHQGHN</span>
                     </div>
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
                       <Code2 className="w-4 h-4" />
-                      Công nghệ Thông tin
+                      Kinh tế - Chính trị
                     </div>
                   </div>
                 </div>
@@ -81,12 +81,12 @@ export function AboutSection() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Lập trình Web',
-                    'Trí tuệ nhân tạo',
-                    'Đọc sách công nghệ',
-                    'Giải thuật',
-                    'UI/UX Design',
-                    'Học ngoại ngữ',
+                    'Học tập số',
+                    'Tư duy hệ thống',
+                    'AI trong giáo dục',
+                    'Kinh tế học',
+                    'Phân tích dữ liệu',
+                    'Nghiên cứu học thuật',
                   ].map((interest, index) => (
                     <span
                       key={index}
@@ -148,14 +148,14 @@ export function AboutSection() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Tôi đặt mục tiêu <span className="text-foreground font-medium">nắm vững kiến thức nền tảng về công nghệ số</span> và hiểu rõ cách ứng dụng trí tuệ nhân tạo trong học tập và công việc.
+                    Tôi đặt mục tiêu <span className="text-foreground font-medium">nâng cao kỹ năng số, biết cách tìm kiếm - đánh giá - sử dụng thông tin</span> và ứng dụng AI như một công cụ hỗ trợ tư duy, không thay thế tư duy.
                   </p>
                   <ul className="space-y-3">
                     {[
-                      'Phát triển tư duy phản biện trong môi trường số',
-                      'Sử dụng AI có trách nhiệm và hiệu quả',
-                      'Xây dựng kỹ năng làm việc nhóm trực tuyến',
-                      'Tạo ra các sản phẩm số sáng tạo',
+                      'Phát triển tư duy hệ thống và kỹ năng số',
+                      'Sử dụng AI hiệu quả và có trách nhiệm trong học tập',
+                      'Biết cách đánh giá độ tin cậy của nguồn thông tin',
+                      'Xây dựng năng lực làm việc trong môi trường số',
                     ].map((goal, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 flex-shrink-0">
@@ -181,13 +181,13 @@ export function AboutSection() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Portfolio này được tạo ra nhằm <span className="text-foreground font-medium">ghi lại hành trình học tập</span>, thể hiện năng lực và là minh chứng cho quá trình phát triển bản thân.
+                    Portfolio này được tạo ra nhằm <span className="text-foreground font-medium">lưu trữ các bài tập học phần, thể hiện quá trình học tập</span> và năng lực cá nhân, dễ dàng chia sẻ và đánh giá.
                   </p>
                   <div className="grid gap-3">
                     {[
-                      { icon: BookOpen, text: 'Rèn luyện kỹ năng trình bày và tổ chức nội dung' },
-                      { icon: Brain, text: 'Thể hiện khả năng sử dụng AI có trách nhiệm' },
-                      { icon: Cpu, text: 'Lưu trữ và showcase các sản phẩm học tập' },
+                      { icon: BookOpen, text: 'Trình bày 6 bài tập học phần đầy đủ và chi tiết' },
+                      { icon: Brain, text: 'Thể hiện tư duy và quá trình thực hiện mỗi bài' },
+                      { icon: Cpu, text: 'Minh chứng việc sử dụng AI có trách nhiệm' },
                     ].map((item, index) => {
                       const Icon = item.icon;
                       return (
