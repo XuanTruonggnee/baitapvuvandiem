@@ -85,8 +85,37 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
           <p className="text-sm text-muted-foreground">
             {project.evidence.content}
           </p>
+          
+          {/* Image Gallery */}
+          {project.evidence.images && project.evidence.images.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {project.evidence.images.map((image, i) => (
+                <a
+                  key={i}
+                  href={image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300"
+                >
+                  <img
+                    src={image}
+                    alt={`Minh chứng ${i + 1}`}
+                    className="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <span className="text-white text-xs font-medium flex items-center gap-1">
+                      <ExternalLink className="w-3 h-3" />
+                      Xem ảnh gốc
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )}
+          
+          {/* Download Links */}
           {project.evidence.links && project.evidence.links.length > 0 && (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 pt-2">
               {project.evidence.links.map((link, i) => (
                 <Button
                   key={i}
