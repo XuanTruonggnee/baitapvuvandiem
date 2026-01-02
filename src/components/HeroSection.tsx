@@ -36,12 +36,12 @@ export function HeroSection() {
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           <span className="block text-foreground">Xin chào, tôi là</span>
-          <span className="block gradient-text mt-2">Nguyễn Văn A</span>
+          <span className="block gradient-text mt-2">Vũ Văn Điềm</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          Sinh viên ngành <span className="text-primary font-semibold">Công nghệ Thông tin</span>
+          Sinh viên ngành <span className="text-primary font-semibold">Kinh tế - Chính trị</span>
           <br className="hidden sm:block" />
           Đam mê khám phá công nghệ số & Trí tuệ nhân tạo
         </p>
